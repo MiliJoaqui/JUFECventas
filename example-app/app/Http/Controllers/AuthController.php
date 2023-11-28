@@ -14,6 +14,7 @@ class AuthController extends Controller
     }
 
     // Handle login form submission
+    //csrf es un token de autentificación que utiliza laravel para corroborar el inicio de sesión
     public function login(Request $request)
     {
         $credentials = $request->validate([
